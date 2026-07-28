@@ -92,10 +92,18 @@ scripts/
     annotation_visualisation.R   - Summary annotation and visualisation
 
 data/
-    (archival FFPE methylation array data - not publicly deposited; patient data restrictions)
+    (archival FFPE methylation array data - not included; patient data restrictions.
+    Raw beta value matrices and per-sample imputed feature values are excluded from
+    this repository. See Reproducibility Notes below.)
 
 results/
-    (classifier outputs, confidence scores, concordance summaries, QC metrics)
+    classifier/                  - Predictions, confidence scores, CpG contribution scores
+    cnv/                         - Genome-wide copy number variation profiles
+    dimensionality_reduction/    - UMAP/t-SNE plots and coordinates
+    enrichment_analysis/         - Differential methylation results, GO/KEGG enrichment
+    pathology_concordance/       - Classifier-histopathology concordance results
+    qc/                          - Quality control metrics and per-sample QC plots
+    tumour_purity/               - HiTIMED tumour purity estimates
 ```
 
 ---
